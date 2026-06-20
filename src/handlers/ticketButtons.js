@@ -132,6 +132,14 @@ const createTicketHandler = {
         .setCustomId('create_ticket_modal')
         .setTitle('Create a Ticket');
 
+       const reasonInput = new TextInputBuilder()
+        .setCustomId('Roblox Username')
+        .setLabel('Please state your roblox username.')
+        .setStyle(TextInputStyle.Paragraph)
+        .setPlaceholder('Roblox Username')
+        .setRequired(true)
+        .setMaxLength(1000);
+
       const actionRow = new ActionRowBuilder().addComponents(reasonInput);
       modal.addComponents(actionRow);
 
@@ -220,7 +228,7 @@ const closeTicketHandler = {
         .setTitle('Close Ticket');
 
       const reasonInput = new TextInputBuilder()
-        .setCustomId('reason')
+        .setCustomId('Reason')
         .setLabel('Reason for closing (optional)')
         .setStyle(TextInputStyle.Paragraph)
         .setPlaceholder('Add an optional reason for closing this ticket...')

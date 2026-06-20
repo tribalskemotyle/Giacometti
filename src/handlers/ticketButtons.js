@@ -133,10 +133,10 @@ const createTicketHandler = {
         .setTitle('Create a Ticket');
 
        const reasonInput = new TextInputBuilder()
-        .setCustomId('Roblox Username')
-        .setLabel('Please state your roblox username.')
+        .setCustomId('reason')
+        .setLabel('Why are you creating this ticket?')
         .setStyle(TextInputStyle.Paragraph)
-        .setPlaceholder('Roblox Username')
+        .setPlaceholder('Describe your issue...')
         .setRequired(true)
         .setMaxLength(1000);
 

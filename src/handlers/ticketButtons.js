@@ -132,6 +132,14 @@ const createTicketHandler = {
         .setCustomId('create_ticket_modal')
         .setTitle('Create a Ticket');
 
+       const reasonInput = new TextInputBuilder()
+        .setCustomId('reason')
+        .setLabel('Why are you creating this ticket?')
+        .setStyle(TextInputStyle.Paragraph)
+        .setPlaceholder('Describe your issue...')
+        .setRequired(true)
+        .setMaxLength(1000);
+      
       const actionRow = new ActionRowBuilder().addComponents(reasonInput);
       modal.addComponents(actionRow);
 

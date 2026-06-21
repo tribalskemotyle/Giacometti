@@ -63,7 +63,7 @@ export default {
             await dmChannel.send({
                 embeds: [
                     successEmbed(
-                        anonymous ? "Message from Giacometti" : `Message from ${interaction.user.tag}`,
+                        anonymous ? "Giacometti has arrived" : `Message from ${interaction.user.tag}`,
                         sanitized
                     ).setFooter({
                         text: `You cannot reply to this message. | Logger ID: ${interaction.id}`
